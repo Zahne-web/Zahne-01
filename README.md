@@ -76,3 +76,105 @@
     <script src="script.js"></script>
 </body>
 </html>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Add any interactive functionality here
+    const addToCartButtons = document.querySelectorAll('.product button');
+    
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Product added to cart!');
+        });
+    });
+});
