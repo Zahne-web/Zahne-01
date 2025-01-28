@@ -177,4 +177,5 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Product added to cart!');
         });
     });
-});
+hero.jpg
+product1.jpg,product2.jpg
